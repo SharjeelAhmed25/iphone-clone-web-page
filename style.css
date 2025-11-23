@@ -667,8 +667,21 @@ footer > div > p{
     display: none;
 }
 
+.n-l-head > .arrow{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
 
 @media (max-width: 425px){
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+
 
     nav{
         display: none;
@@ -692,16 +705,18 @@ footer > div > p{
     .none-apple{
         width: 30%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
     }
 
     .side-logo{
         width: 70%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+        padding-right: 5px;
+        gap: 30px;
         align-items: center;
-        gap: 10px;
+        
     }
 
     .hero-section{
@@ -1015,7 +1030,7 @@ footer > div > p{
 
 /* footer section */
 
-footer{
+footer > .cmd{
    
     display: none;
 }
@@ -1053,6 +1068,58 @@ height: 100%;
     padding: 20px;
 }
 
+    
+}
+
+/* tablet size */
+
+@media (min-width:500px) and (max-width:768px){
+
+ nav{
+        display: none;
+       
+    }
+
+    .nav-none{
+        display: block;
+         display: flex;
+         height: 50px;
+
+        
+    }
+
+    .nav-none > .none-apple > .none-logo{
+
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    .none-apple{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .side-logo{
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+        align-items: center;
+        gap: 50px;
+        
+    }
+
+
+
+
+
+
+
+}
+
 
 
 
@@ -1071,4 +1138,3 @@ height: 100%;
 
 
 
-}
