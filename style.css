@@ -32,6 +32,10 @@ nav{
 
 }
 
+.nav-none{
+    display: none;
+}
+
 nav > ul{
     display: flex;
     list-style: none;
@@ -59,6 +63,24 @@ nav > a > .lock{
 .hero-section{
 
     width: 100%;
+    background-image: url(./assets/images/iphone/hero_ase25__cop938p8rv6u_large.jpg);
+    height: 100%;
+    margin-top: 70px;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  
+
+}
+
+/* :hover sec */
+
+.hero-section:hover{
+
+    width: 100%;
     background-image: url(./assets/images/iphone/large.jpg);
     height: 100%;
     margin-top: 70px;
@@ -68,7 +90,19 @@ nav > a > .lock{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
+    transition: 0.5s ;
+
+
+    .head > h1 , p{
+    color: black;
+    margin: 0px;
+}
+
+.head > p{
+    color: black;
+
+}
+
 
 }
 
@@ -82,11 +116,11 @@ nav > a > .lock{
 }
 
 .head > h1 , p{
-    color: black;
+    color: white;
     margin: 0px;
 }
 
-.head > .p{
+.head > p{
     color: white;
 
 }
@@ -172,7 +206,6 @@ nav > a > .lock{
     transition: 0.5s ease all;
 }
 
-
 /* iphone air section */
 
 .iphone-air{
@@ -230,6 +263,11 @@ nav > a > .lock{
     border: 1px solid rgb(50, 129, 219);
     transition: 0.5s ease all;
 }
+
+
+/* apple card */
+
+
 
 
 /* ipad airpods section */
@@ -625,8 +663,412 @@ footer > div > p{
     width: 20%;
 }
 
+.none-footer{
+    display: none;
+}
+
+
+@media (max-width: 425px){
+
+    nav{
+        display: none;
+       
+    }
+
+    .nav-none{
+        display: block;
+         display: flex;
+         height: 50px;
+        
+    }
+
+    .nav-none > .none-apple > .none-logo{
+
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .none-apple{
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .side-logo{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-section{
+
+    background-image: url(./assets/images/iphone/small.jpg);
+
+}
+
+.head{
+    
+    margin-top: 200px;
+    
+}
+
+.head > h1 , p{
+    color: black;
+   
+}
+
+.head > p{
+    color: black;
+
+}
+
+
+.head > h1{
+    font-size: 23px;
+}
+.head > p{
+    font-size: 12px;
+}
+
+.btttn > button{
+   
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+
+}
+
+/* 17 pro start */
+
+.iphone-section{
+    width: 100%;
+    height: 70%;
+    background-image: url(./assets/images/iphone/hero_iphone_17_prosmall.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.ichild{
+    display: flex;
+    
+    
+}
+
+
+.ichild > h1{
+    font-size: 23px;
+}
+.ichild > p{
+    font-size: 12px;
+}
+
+.btn > button{
+    
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 12px;
+   
+}
+
+/* air iphone section */
+
+.iphone-air{
+  
+    background-image: url(./assets/images/iphone/hero_iphone_air__small.jpg);
+    height: 100%;
+}
+
+.airchild > h1{
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+.airchild > p{
+    font-size: 15px;
+    margin-bottom: 0px;
+   
+}
+
+.bttn > button{
+    background-color: rgb(50, 129, 219);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    margin-left: 10px;
+    border: none;
+}
+
+/* ipad airpods section */
+
+.ipad-airpods{
+    width: 100%;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    
+
+}
+
+.child1{
+   width: 100%;
+   height: 100%;
+    background-image: url(./assets/images/airbirds/promo_airpodspro_small_2x.jpg);
+   margin: 0px;
+
+}
+
+.child1 > h1{
+    font-size: 23px;
+}
+.child1 > p{
+    font-size: 12px;
+   
+}
+
+.cbtn > button{
+   
+     padding: 5px 10px;
+    font-size: 12px;
+   
+}
+
+.child2{
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/images/ipad/promo_ipad_air_avail__6_small_2x.jpg);
+   margin: 0px;
+   align-items: center;
+   margin-top: 30px;
+}
+
+.child2 > img{
+    width: 180px;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.child2 > p{
+    font-size: 15px;
+    text-align: center;
+    margin: 0px;
+   
+}
+
+.cbtn > button{
+    
+     padding: 5px 15px;
+    font-size: 15px;
+   
+}
+
+
+/* ipad watch */
+
+.ipad-watch{
+    width: 100%;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    
+
+}
+
+.wchild1{
+    
+    background-image: url(./assets/images/watches/promo_apple_watch_series__small.jpg);
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wchild1 > img{
+
+    margin-bottom: 20px;
+    width: 250px;
+}
+.wchild1 > p{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.wbtn > button{
+    background-color: rgb(50, 129, 219);
+    color: white;
+     padding: 5px 15px;
+    border-radius: 25px;
+    font-size: 12px;
+    
+}
+
+
+.wchild2{
+   background-image: url(./assets/images/watches/promo_ipad___small_2x.jpg);
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.wchild2 > h1{
+    font-size: 50px;
+    margin-top: 50px;
+
+}
+.wchild2 > p{
+    font-size: 15px;
+    margin: 0px;
+}
+
+
+.wbtn > button{
+   
+     padding: 6px 18px;
+    border-radius: 25px;
+    font-size: 15px;
+
+   
+}
+
+/* trade iphone */
+
+.trade-iphone{
+    width: 100%;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    
+    
+
+}
+
+.tchild1{
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/images/iphone/promo_iphone_tradein___small_2x.jpg);
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tchild1 > img{
+   
+    width: 150px;
+}
+.tchild1 > p{
+    font-size: 15px;
+   ;
+}
+
+.tbtn > button{
+   
+     padding: 7px 15px;
+    border-radius: 25px;
+    font-size: 15px;
+
+}
+
+.tchild2{
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/images/iphone/promo_apple_card__small.jpg);
+    margin: 0px;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.tchild2 > img{
+   
+    width: 170px;
+}
+
+.tchild2 > p{
+    font-size: 15px; 
+}
+
+.tbtn > button{
+   
+     padding: 7px 15px;
+    border-radius: 25px;
+    font-size: 15px;
+   
+}
+
+/* footer section */
+
+footer{
+   
+    display: none;
+}
+
+.main{
+    display: none;
+}
+
+.none-footer{
+    display: block;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.none-footer > .none-main > .fnp1{
+width: 100%;
+height: 100%;
+
+}
+
+.none-footer > .none-main > .fnp1{
+
+    display: flex;
+    justify-content: center;
+}
+
+.none-footer > .none-main .fnp1 > p{
+
+    text-align: justify;
+    margin: 0px;
+    line-height: 1.5;
+    font-size: 12px;
+    padding: 20px;
+}
 
 
 
 
 
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+}
