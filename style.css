@@ -590,9 +590,15 @@ footer{
     width: 100%;
     margin-top: 50px;
     background-color: rgb(252, 248, 248);
+    display: flex;
+    justify-content: center;
 }
 
-footer > div{
+footer > .cmd{
+    width: 90%;
+}
+
+footer > .cmd > div{
     
     display: flex;
     flex-direction: column;
@@ -601,7 +607,7 @@ footer > div{
     /* background-color: #5f6368; */
 }
 
-footer > div > p{
+footer > .cmd > div > p{
     text-align: justify;
     font-size: 25px;
     line-height: 1.5;
@@ -617,6 +623,8 @@ footer > div > p{
     
 }
 
+
+
 .foot > div > .link{
     display: flex;
     flex-direction: column;
@@ -625,7 +633,7 @@ footer > div > p{
     
 }
 
-.dddd{
+footer > .cmd >.dddd{
     display: flex;
     width: 80%;
     flex-direction: column;
@@ -651,6 +659,11 @@ footer > div > p{
 
 }
 
+.main > .flink > a{
+    color: rgb(50, 129, 219);
+    
+}
+
 .flink{
     
     width: 80%;
@@ -658,6 +671,7 @@ footer > div > p{
     gap: 30px;
     align-items: center;
 }
+
 
 .clink{
     width: 20%;
@@ -667,20 +681,9 @@ footer > div > p{
     display: none;
 }
 
-.n-l-head > .arrow{
-
-    display: flex;
-    justify-content: space-between;
-
-}
-
 
 @media (max-width: 425px){
 
-    .container{
-        width: 100vw;
-        height: 100vh;
-    }
 
 
     nav{
@@ -1066,6 +1069,32 @@ height: 100%;
     line-height: 1.5;
     font-size: 12px;
     padding: 20px;
+}
+
+/* shop section */
+
+.n-l-section{
+
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.n-l-head{
+
+    width: 90%;
+   
+}
+
+.arrow{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
     
