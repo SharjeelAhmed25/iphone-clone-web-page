@@ -29,7 +29,7 @@ nav{
     height: 100px;
     background-color: rgb(255, 255, 255);
     display: flex;
-    gap: 70px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -37,30 +37,43 @@ nav{
 
 }
 
-.nav-none{
-    display: none;
-}
+
 
 nav > ul{
     display: flex;
+    align-items: center;
     list-style: none;
-    gap: 40px;
+    gap: 30px;
 }
 
-nav > img{
+.nb{
+    display: flex;
+  
+    width: 100%;
+    justify-content: space-evenly;
+    
+    height: 50px;
+    align-items: center;
+}
+
+nav > .na > img{
     width: 60px;
     height: 60px;
-    /* background-color: black; */
+ 
 }
 
-nav > a > .search{
-    width: 50px;
-    height: 50px;
+nav > .nb > a > .search{
+    width: 30px;
+    height: 30px;
 }
 
-nav > a > .lock{
-    width: 45px;
-    height: 45px;
+nav > .nb > a > .lock{
+    width: 30px;
+    height: 30px;
+}
+
+nav > .nb > .men{
+    display: none;
 }
 
 /* hero section */
@@ -643,6 +656,13 @@ footer > .cmd >.dddd{
     /* background-color: #5f6368; */
 }
 
+footer > .cmd > div > p > a{
+    
+    
+    color: rgb(50, 129, 219);
+   
+}
+
 .main{
     display: flex;
     width: 100%;
@@ -683,49 +703,46 @@ footer > .cmd >.dddd{
 
 @media (max-width: 425px){
 
+  nav{
+    padding: 0px;
+    height: 50px;
+    gap: 50px;
+    
+}
 
+nav > .na > img{
+    width: 35px;
+    height: 35px;
+}
 
-    nav{
-        display: none;
-       
-    }
-
-    .nav-none{
-        display: block;
-         display: flex;
-         height: 50px;
-         
+    nav > ul{
         
+       display: none;
     }
-
-    .nav-none > .none-apple > .none-logo{
-
-        width: 40px;
-        height: 40px;
-
-    }
-
-    .none-apple{
-        width: 30%;
+    .nb{
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
-       
-    }
-
-    .side-logo{
-        width: 70%;
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 5px;
         gap: 30px;
-        align-items: center;
-        
     }
 
+    nav > .nb > .men{
+        display: block;
+    }
+
+    nav > .nb > a > .search , .lock{
+        width: 25px;
+       height: 25px;
+       margin-left: 60px;
+    }
+    nav > .nb > a > .lock{
+        width: 25px;
+       height: 25px;
+       margin: 0px;
+    }
+   
+   
     .hero-section{
 
-    background-image: url(./assets/images/iphone/small.jpg);
+    background-image: url(./assets/images/iphone/small_2x.jpg);
     margin-top: 0px;
 
 }
@@ -1105,45 +1122,51 @@ height: 100%;
 /* tablet screen */
 
 
-@media (min-width: 425px) and (max-width: 770px){
+@media (min-width:426px) and (max-width: 768px){
 
  nav{
-        display: none;
+   
+    height: 50px;
+    justify-content: space-around;   
+}
+
+
+nav > .nb > .men{
+    display: block;
+}
+.nb{
+    display: flex;
+    gap: 100px;
+    width: 35%;
+    justify-content: flex-start;
+   
+}
+nav > .na > img{
+    width: 55px;
+    height: 55px;
+}
+
+    nav > ul{
+        
+       display: none;
+    }
+
+    nav > .nb > a > .search{
+        width: 25px;
+       height: 25px;
        
     }
-
-    .nav-none{
-        
-        display: block;
-         height: 50px;
-         
-        
+    nav > .nb > a > .lock{
+        width: 25px;
+       height: 25px;
+       margin: 0px;
     }
 
-    .nav-none > .none-apple > .none-logo{
-
-        width: 40px;
-        height: 40px;
-
+    nav > .nb > .menu{
+         width: 25px;
+       height: 25px;
     }
-
-    .none-apple{
-        width: 30%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-       
-    }
-
-    .side-logo{
-        width: 70%;
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 5px;
-        gap: 30px;
-        align-items: center;
-        
-    }
+  
 
 
     .hero-section{
@@ -1527,44 +1550,54 @@ height: 100%;
     
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 770px) and (max-width: 1024px){
   
-.nav-none{
+ nav{
+   
+    height: 50px;
+justify-content: center;  
+    gap: 10px; 
+}
+
+
+nav > .nb > .men{
     display: none;
 }
-    nav{
+.nb{
+    display: flex;
     gap: 10px;
- 
-    
+    width: 35%;
+    justify-content: flex-start;
    
 }
+nav > .na > img{
+    width: 55px;
+    height: 55px;
+}
 
-  nav > ul > li > .a1{
+nav > ul > li > a{
     font-size: 10px;
-    
-}
-  nav > ul{
-    gap: 0px;
-    display: block;
-    display: flex;
 }
 
-nav > img{
-    width: 45px;
-    height: 45px;
-    /* background-color: black; */
-}
+    nav > ul{
+        
+       display: block;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 10px;
+    }
 
-nav > a > .search{
-    width: 30px;
-    height: 30px;
-}
-
-nav > a > .lock{
-    width: 30px;
-    height: 30px;
-}
-
+    nav > .nb > a > .search{
+        width: 25px;
+       height: 25px;
+       
+    }
+    nav > .nb > a > .lock{
+        width: 25px;
+       height: 25px;
+       margin: 0px;
+    }
 
 /* hero section */
 
@@ -1782,8 +1815,7 @@ footer > .cmd > div > p > a{
 }
 
     nav{
-    gap: 50px;
-   
+    gap: 50px;  
 }
 
 .container nav > ul > li > .a1{
@@ -1794,18 +1826,18 @@ footer > .cmd > div > p > a{
     gap: 35px;
 }
 
-nav > img{
+nav > .na > img{
     width: 45px;
     height: 45px;
     /* background-color: black; */
 }
 
-nav > a > .search{
+nav > .nb > a > .search{
     width: 30px;
     height: 30px;
 }
 
-nav > a > .lock{
+nav > .nb > a > .lock{
     width: 30px;
     height: 30px;
 }
